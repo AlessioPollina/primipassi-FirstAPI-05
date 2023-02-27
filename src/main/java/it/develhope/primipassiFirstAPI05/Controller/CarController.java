@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class CarController {
 
-    @GetMapping(value = "/cars/{carDTO}")
-    public CarDTO getCars(@PathVariable CarDTO carDTO) {
+    @GetMapping(value = "/cars")
+    public CarDTO getCars() {
         return new CarDTO();
     }
 
